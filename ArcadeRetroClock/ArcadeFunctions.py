@@ -66,6 +66,7 @@ import curses
 ScrollSleep = 0.07
 
 KeyboardSpeed  = 15
+TimeFormat = 24
 ConfigFileName = "ClockConfig.ini"
 
 
@@ -4061,7 +4062,7 @@ def CheckBoundary(h,v):
 
 def ShowDigitalClock(h,v,duration):
   Buffer = copy.deepcopy(unicorn.get_pixels())
-  ClockSprite = CreateClockSprite(12)
+  ClockSprite = CreateClockSprite(TimeFormat)
   ClockSprite.r = SDLowRedR
   ClockSprite.g = SDLowRedG
   ClockSprite.b = SDLowRedB
@@ -5252,7 +5253,7 @@ def CreateShortWordSprite(ShortWord):
 
   
 def ShowScrollingClock():
-  TheTime = CreateClockSprite(12)
+  TheTime = CreateClockSprite(TimeFormat)
   
   
   #PacRightAnimatedSprite.Scroll(-5,1,'right',13,gv.ScrollSleep)
@@ -5898,7 +5899,7 @@ def DrawTinyClock(Minutes):
   while (now >= MinDate and now <= MaxDate and Quit == 0):
     print ("--DrawTinyClock--")
     unicorn.off()
-    ClockSprite = CreateClockSprite(2)
+    ClockSprite = CreateClockSprite(TimeFormat)
     ClockSprite.r = SDDarkRedR
     ClockSprite.g = SDDarkRedG
     ClockSprite.b = SDDarkRedB
