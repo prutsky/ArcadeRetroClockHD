@@ -5078,19 +5078,19 @@ def CreateDayOfWeekSprite():
   dow        = ""
  
   if (weekdaynum   == 0 ):
-    dow = "MON"
+    dow = "MAA"
   elif (weekdaynum == 1 ):
-    dow = "TUE"
+    dow = "DIN"
   elif (weekdaynum == 2 ):
-    dow = "WED"
+    dow = "WOE"
   elif (weekdaynum == 3 ):
-    dow = "THU"
+    dow = "DON"
   elif (weekdaynum == 4 ):
-    dow = "FRI"
+    dow = "VRI"
   elif (weekdaynum == 5 ):
-    dow = "SAT"
+    dow = "ZAT"
   elif (weekdaynum == 6 ):
-    dow = "SUN"
+    dow = "ZON"
 
 
   DowSprite = CreateBannerSprite(dow)  
