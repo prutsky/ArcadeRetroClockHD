@@ -4295,8 +4295,8 @@ def CreateSpecialArmada(ShowTime=True):
     if ((random.randint(1,2) == 1) or ShowTime == True):
       TheTime = af.CreateClockSprite(12)
     else:
-      WordList=("PAC","MAN","1943","USA","CAN","AUS","NZ","UK","???","XX","RAS","PIE","PI",
-                "IOI",":O:","8:8","123","777","42","888")
+      WordList=("PAC","MAN","1973","1974","2008","2010","MMH","RMH","WWJ","EH","ROOS","MEES","PI",
+                "***",":O:","8:8","E23","L-7","91","888")
       TheMessage = WordList[random.randint(1,len(WordList)-1)]
       TheTime = af.CreateBannerSprite(TheMessage)
       print ("Armada Message:",TheMessage)
